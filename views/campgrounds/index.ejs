@@ -1,0 +1,14 @@
+
+
+    <a href="/campgrounds/new"><button>
+
+        Add new
+    </button>
+    </a>
+    <br>
+    <% campgrounds.forEach(campground => { %>
+        <p>
+
+            <a href="/campgrounds/<%= campground.slug %>"><%= campground.title %> </a>
+        </p>
+            <% }) %>

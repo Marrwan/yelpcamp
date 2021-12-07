@@ -1,0 +1,11 @@
+
+    <h1><%= campground.title %> </h1>
+    <h3><%= campground.location %> </h3>
+    <h3><%= campground.latitude %> </h3>
+    <form action="/campgrounds/<%= campground.slug %>/delete?_method=DELETE" method="post">
+    <button type="submit">DELETE</button></form>
+    <br>
+
+    <a href="/campgrounds/<%=campground.slug%>/edit"> EDIT</a>
+    <br>
+    <a href="/campgrounds">All campgrounds</a>

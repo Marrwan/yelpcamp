@@ -1,0 +1,7 @@
+
+    
+    <form action="/campgrounds/<%= campground.slug %>/edit?_method=PUT" method="post">
+    <input type="text" name="title" id="" value = "<%=typeof campground.title != undefined ? campground.title : '' %>">
+    <input type="text" name="location" value = "<%=typeof campground.location != undefined ? campground.location : '' %>">
+    <button type="submit">Edit</button>
+    </form>
